@@ -11,12 +11,12 @@ jobs:
       steps:
        - name: Hello World
          run: echo "Hello World GitHub Actions"
-       - name: Shows Date
+       - name: Show Date
          run: date
     php-lint:
-        runs-on: ubuntu-latest
-        steps:
-         - name: Checkout
-           uses: actions/checkout@v3
-         - name: PHP Lint
-           run: find . -name "*.php" -exec php -1 {} +
+      runs-on: ubuntu-latest
+      steps:
+       - name: Checkout
+         uses: actions/checkout@v3
+       - name: PHP Lint
+         run: find . -name "*.php" -exec php -1 {} +
